@@ -1,0 +1,318 @@
+body{
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+p{
+    font-size: 2.5em;
+    text-align: center;
+    color: blue;
+}
+.list1{
+    margin-left: 300px;
+    margin-top: 100px;
+}
+td{
+    margin: 100px;
+}
+.h-skew{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.h-skew1{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    animation: skew  infinite ;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes skew{
+    0%{
+        width:150px;
+    height: 150px;
+    background-color: #497174;
+    }
+    50%{
+        width:150px;
+        height:150px;
+        transform: skewX(-30deg);
+    }
+    100%{
+        width:150px;
+        height:150px;
+        transform: skewX(30deg);
+    }
+}
+.h-skew2{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    animation: skew infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.h-skew3{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    animation: skew infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.v-skew{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.v-skew1{
+    width:150px;
+    height: 150px;
+    background-color: grey;
+    animation: skewy infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes skewy{
+    0%{
+        width:150px;
+    height: 150px;
+    background-color: grey;
+    }
+    50%{
+        width:150px;
+        height:150px;
+        transform: skewY(-30deg);
+    }
+    100%{
+        width:150px;
+        height:150px;
+        transform: skewY(30deg);
+    }
+}
+.v-skew2{
+    width:150px;
+    height: 150px;
+    background-color: grey;
+    animation: skewy infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.v-skew3{
+    width:150px;
+    height: 150px;
+    background-color: grey;
+    animation: skewy infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.rotate{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rotate1{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    animation: rotate infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    0%{
+        width:150px;
+    height: 150px;
+    background-color: #497174;
+    }
+    100%{
+        width:150px;
+        height:150px;
+        transform:rotate(360deg);
+    }
+}
+.rotate2{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    animation: rotate infinite;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+}
+
+.rotate3{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    animation: rotate infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.diff{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.translatex{
+    width:150px;
+    height: 150px;
+    background-color: #497174;
+    border: 1px solid ;
+    animation: translatex infinite;
+    animation-duration: 2s;
+}
+@keyframes translatex{
+    0%{
+        width:150px;
+    height: 150px;
+    background-color: #497174;
+    }
+    50%{
+        width:150px;
+        height:150px;
+        transform:scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.translatey{
+    width:150px;
+    height: 150px;
+    background-color: brown;
+    border: 1px solid ;
+    animation: translatey infinite;
+    animation-duration: 2s;
+}
+@keyframes translatey{
+    0%{
+        width:150px;
+    height: 150px;
+    background-color: brown;
+    }
+    50%{
+        width:150px;
+        height:150px;
+        transform:scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.rotate90{
+    width:150px;
+    height: 150px;
+    background-color: green;
+    border: 1px solid ;
+    animation: rotate90 infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes rotate90 {
+    0%{
+        width:150px;
+        height: 150px;
+        background-color: green;
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+/* index1.html */
+.list2{
+    margin-left: 650px;
+}
+.ease1{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition:width 2s;
+   
+}
+.ease1:hover{
+    cursor: pointer;
+    width:300px;
+    
+}
+.ease2{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition: width 2s, height 4s;
+}
+.ease2:hover{
+    cursor: pointer;
+    width:300px;
+    height:300px;
+}
+.ease3{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0.35, 0.53, 0.84, 0.59);
+}
+.ease3:hover{
+    cursor: pointer;
+    width:300px;
+}
+.ease4{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+.ease4:hover{
+    cursor: pointer;
+    width:300px;
+}
+.ease5{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0, 0.98, 0.55, 0.31);
+}
+.ease5:hover{
+    cursor: pointer;
+    width:300px;
+}
+.ease6{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+.ease6:hover{
+    cursor: pointer;
+    width:300px;
+}
+.ease7{
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin:20px 0;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+.ease7:hover{
+    cursor: pointer;
+    width:300px;
+}
